@@ -4,58 +4,17 @@
         <meta charset="UTF-8">
         <title>Psychic Game</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
     </head>
     
     <body>
         <h1>The Psychic Game</h1>
         <div>
            <p id="directions-text">Guess what letter I'm thinking of</p>
-           <p id="wins-text"></p>
-           <p id="losses-text"></p>
-           <p id="guesses-left-text"></p>
-           <p id="guesses-sofar-text"></p>
+           <p id="wins-text">Wins: 0</p>
+           <p id="losses-text">Losses: 0</p>
+           <p id="guesses-text">Guesses Left: 9</p>
+           <p id="guesses-sofar-text">Your Guesses So Far: </p>
         </div>
-
-        <script type="text/javascript">
-            var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l',
-                'm','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-                
-            var wins = 0;
-            var losses = 0;
-            var guesses = 10;
-            
-            var winsText = document.getElementById("wins-text");
-            var lossesText = document.getElementById("losses-text");
-            var guessesLeftText = document.getElementById("guesses-left-text");
-            var guessSoFarText = document.getElementById("guesses-sofar-text");
-            
-                document.onkeyup = function(event) {
-                    var userGuess = event.key;
-                    var computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
-                    console.log("computerChoice:" + computerChoice)
-                    console.log("userGuess" + userGuess) 
-
-                    if (userGuess === computerChoice) {
-                        wins++; 
-                        guesses--;
-                        console.log("Wins: " + wins);
-                        console.log("guesses" + guesses);
-                    }
-                    
-                    if (userGuess !== computerChoice) {
-                        losses++;
-                        guesses--;
-                        console.log("Losses " + losses);
-                        console.log("guesses" + guesses);
-                    }
-                    
-                    winsText.textContent = "Wins: " + wins;
-                    lossesText.textContent = "Losses: " + losses;
-                    guessesLeftText.textContent = "Guesses Left: " + guesses;
-                }
-
-        </script>
     </body>
 </html>
-
-
