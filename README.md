@@ -17,4 +17,3 @@ Instructions
 How users can get started with the project:
 
      To view the game, click on "Word Guess" in my portfolio (https://rsa153.github.io/bootstrap-portfolio/portfolio.html)          then press a letter and see if you selected the letter that the app chose.
-        
