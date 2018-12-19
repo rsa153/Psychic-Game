@@ -19,6 +19,6 @@ Instructions
         
 How users can get started with the project:
 
-     To view the Word Guess game, please click on "Word Guess" in my portfolio 
+     To view the Word Guess game, please click on "Psychic Game" in my portfolio 
      (https://rsa153.github.io/bootstrap-portfolio/portfolio.html) 
      then press a letter and see if you selected the letter that the app chose.
